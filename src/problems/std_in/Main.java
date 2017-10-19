@@ -10,7 +10,9 @@ public class Main {
 		String path = Main.class.getResource("input.txt").getPath();
 		System.setIn(new FileInputStream(path));
 		Scanner sc = new Scanner(System.in);
-        while(sc.hasNextLine()) System.out.println(sc.nextLine());
+        while(sc.hasNextInt()){
+        	System.out.println(sc.nextInt());
+        }
         sc.close();
 	}
 
